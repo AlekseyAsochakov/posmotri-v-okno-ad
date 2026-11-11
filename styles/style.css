@@ -109,6 +109,7 @@ ol {
 
 .search-form__textfield {
   inline-size: 225px;
+  min-block-size: 27px;
   padding: 0;
   border: none;
   border-block: 1px solid #fff;
@@ -202,7 +203,8 @@ ol {
 }
 
 .title {
-  margin-block-end: 26px;
+  margin-block-end: 23px;
+  padding-block-start: 3px;
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
@@ -227,7 +229,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-block: 3px;
 }
 
 .content__list-item {
@@ -258,7 +259,7 @@ ol {
 
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline-offset: -1px;
 }
 
 .content__video-card {
@@ -276,7 +277,7 @@ ol {
   font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
   text-overflow: ellipsis;
   text-transform: uppercase;
   white-space: nowrap;
@@ -305,6 +306,10 @@ ol {
   flex-shrink: 0;
   inline-size: 100%;
   block-size: 34px;
+}
+
+.more-button:focus-visible {
+  outline-offset: -3px;
 }
 
 /* Кастомный скроллбар */
